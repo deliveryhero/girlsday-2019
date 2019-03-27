@@ -1,0 +1,233 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.unstyled {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forest {
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+.forest-entry {
+  font-size: 4em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@keyframes jumpAnimation
+{
+  0%
+  {
+    transform: rotate(7deg) translateY(0);
+  }
+  50%
+  {
+    transform: rotate(-2deg) translateY(-4px);
+  }
+  100%
+  {
+    transform: rotate(3deg) translateY(0);
+  }
+}
+
+@keyframes walkAnimationX
+{
+  0%
+  {
+    left: 72%;
+  }
+  20%
+  {
+    left: 62%;
+  }
+  40%
+  {
+    left: 45%;
+  }
+  60%
+  {
+    left: 45%;
+  }
+  80%
+  {
+    left: 25%;
+  }
+  100%
+  {
+    left: 60%;
+  }
+}
+
+@keyframes walkAnimationY
+{
+  0%
+  {
+    top: 52%;
+  }
+  20%
+  {
+    top: 58%;
+  }
+  40%
+  {
+    top: 55%;
+  }
+  60%
+  {
+    top: 45%;
+  }
+  80%
+  {
+    top: 35%;
+  }
+  100%
+  {
+    top: 20%;
+  }
+}
+
+.forest-entry.squirrel {
+  animation: jumpAnimation 0.5s infinite, walkAnimationX 10s infinite alternate cubic-bezier(0.075, 0.82, 0.165, 1), walkAnimationY 10s infinite alternate cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.textbox {
+  max-width: 600px;
+}
+
+.slide:not(.unstyled) h1 {
+  font-family: 'Libre Baskerville';
+  font-size: 3.5em;
+  line-height: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.slide:not(.unstyled) h2 {
+  font-family: 'Libre Baskerville';
+  font-size: 2.5em;
+}
+
+.slide:not(.unstyled) p {
+  font-family: 'Assistant';
+  font-size: 1.5em;
+}
+
+.slide:not(.unstyled) li {
+  font-family: 'Assistant';
+  font-size: 1.5em;
+  line-height: 1.75em;
+}
+
+.slide:not(.unstyled) p.emoji {
+  font-size: 5em;
+  margin: 0;
+}
+
+.slide:not(.unstyled) pre {
+  font-size: 2.5em;
+  font-family: 'Inconsolata', monospace;
+}
+
+.me {
+  width: 321px;
+  height: 321px;
+  margin: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotateAnimation 1.5s linear infinite;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 ) rotate(-10deg);
+  }
+  50%
+  {
+    transform: scale( 1.2 ) rotate(10deg);
+  }
+  100%
+  {
+    transform: scale( 1 ) rotate(-10deg);
+  }
+}
+
+
+.pump {
+  animation: heartbeat 0.5s linear infinite;
+}
+
+@keyframes wiggleArrowAnimation
+{
+  0%
+  {
+    transform: rotate(58deg);
+  }
+  50%
+  {
+    transform: rotate(61deg);
+  }
+  100%
+  {
+    transform: rotate(58deg);
+  }
+}
+
+.wiggle-arrow {
+ animation: wiggleArrowAnimation 0.4s infinite; 
+}
+
+@keyframes wiggleTextAnimation
+{
+  0%
+  {
+    transform: rotate(1deg);
+  }
+  50%
+  {
+    transform: rotate(-1deg);
+  }
+  100%
+  {
+    transform: rotate(1deg);
+  }
+}
+
+.wiggle-text {
+  display: inline-block;
+ animation: wiggleTextAnimation 0.4s infinite; 
+}

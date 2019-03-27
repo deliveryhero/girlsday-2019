@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Girls Day 2018 HTML/CSS Workshop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|Inconsolata|Libre+Baskerville:400,400i"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+</head>
+<body>
+  <div class="slide" style="background-color: tomato; color: #fff;">
+    <div class="textbox">
+      <h1>Girls Day 2019</h1>
+      <p style="text-align: center;">HTML & CSS Workshop</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: papayawhip; color: tomato;">
+    <img src="img/me.jpg" class="me" />
+    <div class="textbox">
+      <h1>Wer bin ich?</h1>
+      <p>👋 Ich bin Simon</p>
+      <ul>
+        <li>Realschulabschluss</li>
+        <li>Vor 9 Jahren Ausbildung zum Mediengestalter (Digital)</li>
+        <li>Studium Informatik (Digitale Spiele und Medien) in Trier</li>
+        <li>Jetzt entwickle ich Web Apps bei Delivery Hero (Seit 3 Jahren)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: seagreen; color: #fff;">
+    <div class="textbox">
+      <h1>Meine Hobbies</h1>
+      <ul>
+        <li>Musik machen (Gitarre)</li>
+        <li>Computerspiele</li>
+        <li>Im Internet surfen</li>
+        <li>Programmieren</li>
+        <li>Bildbearbeitung</li>
+        <li>Filme schneiden</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: wheat; color: tomato;">
+    <div class="textbox">
+      <h1>Was ist HTML?</h1>
+      <p>Eine Auszeichnungssprache!</p>
+      <p class="emoji">🤷‍♀️</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <h1>Aber was heißt das?</h1>
+      <p>Ein Beispiel: Wir wollen einen Wald beschrieben!</p>
+      <p>Was gibt es in einem Wald?</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <h1>Wald</h1>
+      <p class="emoji">Bäume 🌲 🌳</p>
+      <p class="emoji">Tiere 🐿 🐗 🐻</p>
+      <p class="emoji">Pilze 🍄</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <pre>
+&lt;wald&gt;
+  &lt;baum typ="🌳"&gt;
+    &lt;eichhoernchen&gt;🐿&lt;/eichhoernchen&gt;
+  &lt;/baum&gt;
+  &lt;fliegenpilz&gt;🍄&lt;/fliegenpilz&gt;
+  &lt;baer&gt;🐻&lt;/baer&gt;
+  &lt;baum typ="🌲"&gt;&lt;/baum&gt;
+&lt;/wald&gt;
+      </pre>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <pre>
+&lt;baum&gt;🌳&lt;/baum&gt;
+      </pre>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <pre>
+&lt;baum typ="🌳"&gt;&lt;/baum&gt;
+&lt;baum typ="🌲"&gt;&lt;/baum&gt;
+      </pre>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <pre>
+&lt;baum typ="🌳"&gt;
+  &lt;eichhoernchen&gt;🐿&lt;/eichhoernchen&gt;
+  &lt;nuss&gt;🌰&lt;/nuss&gt;
+  &lt;nuss&gt;🌰&lt;/nuss&gt;
+  &lt;nuss&gt;🌰&lt;/nuss&gt;
+  &lt;nuss&gt;🌰&lt;/nuss&gt;
+&lt;/baum&gt;
+      </pre>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="forest">
+      <div class="forest-entry" style="left: 30%; top: 20%">🌳</div>
+      <div class="forest-entry" style="left: 73%; top: 67%">🌲</div>
+      <div class="forest-entry" style="left: 25%; top: 55%">🌳</div>
+      <div class="forest-entry" style="left: 20%; top: 60%">🌳</div>
+      <div class="forest-entry" style="left: 10%; top: 10%">🌳</div>
+      <div class="forest-entry" style="left: 12%; top: 77%">🌲</div>
+      <div class="forest-entry" style="left: 17%; top: 75%">🌲</div>
+      <div class="forest-entry" style="left: 15%; top: 80%">🌲</div>
+      <div class="forest-entry" style="left: 40%; top: 37%; font-size: 1.5em">🌿</div>
+      <div class="forest-entry" style="left: 37%; top: 38%; font-size: 1.5em">🍄</div>
+      <div class="forest-entry" style="left: 35%; top: 39%; font-size: 1.5em; transform: scaleX(-1)">🌿</div>
+      <div class="forest-entry" style="left: 40%; top: 40%; font-size: 1.5em">🍄</div>
+      <div class="forest-entry" style="left: 56%; top: 72%; font-size: 1.5em">🌿</div>
+      <div class="forest-entry" style="left: 55%; top: 70%; font-size: 1.5em">🌼</div>
+
+      <div class="forest-entry" style="left: 50%; top: 20%; font-size: 1.5em">🌱</div>
+      <div class="forest-entry" style="left: 35%; top: 90%; font-size: 1.5em">🌱</div>
+      <div class="forest-entry" style="left: 90%; top: 55%; font-size: 1.5em">🌱</div>
+      
+      
+      
+      
+      <div class="forest-entry" style="left: 82%; top: 33%">🌳</div>
+      <div class="forest-entry" style="left: 77%; top: 35%">🌳</div>
+      <div class="forest-entry" style="left: 53%; top: 42%">🌲</div>
+      <div class="forest-entry" style="left: 6%; top: 37%">🌲</div>
+      <div class="forest-entry" style="left: 65%; top: 15%">🌲</div>
+
+      <div class="forest-entry squirrel" style="left: 72%; top: 52%; font-size: 2em">🐿</div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: coral; color: floralwhite;">
+    <div class="textbox">
+      <h1>Was könnte man denn noch so beschreiben?</h1>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: royalblue; color: aliceblue;">
+      <pre>
+&lt;zimmer&gt;
+  &lt;person name="Simon" alter="30" haarfarbe="braun"&gt;
+    &lt;brille rahmen="dunkel"&gt;&lt;/brille&gt;
+  &lt;/person&gt;
+  &lt;projektor&gt;&lt;/projektor&gt;
+&lt;/zimmer&gt;
+      </pre>
+  </div>
+
+  <div class="slide" style="background-color: indigo; color: mediumseagreen;">
+    <div class="textbox">
+      <h1>Was hat das jetzt mit dem Internet zu tun? 🤦‍♀️</h1>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: rebeccapurple; color: lightseagreen;">
+    <div class="textbox"> 
+      <h1>Na, es wird genau so beschrieben</h1>
+      <pre>
+&lt;html&gt;
+  &lt;h1&gt;Überschrift&lt;/h1&gt;
+  &lt;p&gt;Hallo, das ist ein text&lt;/p&gt;
+  &lt;img width="300" src="img/grumpy.jpg" /&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: snow; color: midnightblue;">
+    <div class="textbox">
+      <h1>Überschrift</h1>
+      <p>Hallo, das ist ein text</p>
+      <img width="300" src="img/grumpy.jpg">
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  purple;">
+    <div class="textbox">
+<pre>
+&lt;h1&gt;Haupt Überschrift&lt;/h1&gt;
+&lt;p&gt;Ein bisschen Text&lt;/p&gt;
+&lt;h2&gt;Zweite Überschrift&lt;/h2&gt;
+&lt;p&gt;Noch mehr&lt;/p&gt;
+</pre>
+      <h1>Haupt Überschrift</h1>
+      <p>Ein bisschen Text</p>
+      <h2>Zweite Überschrift</h2>
+      <p>noch mehr Text</p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  black;">
+    <div style="max-width:900px;">
+      <pre>
+&lt;p&gt;Ein <span style="color: tomato;">&lt;strong&gt;wichtiger&lt;/strong&gt;</span> Text&lt;/p&gt;
+&lt;p&gt;Ein <span style="color: tomato;">&lt;em&gt;hervorgehobener&lt;/em&gt;</span> Text&lt;/p&gt;
+      </pre>  
+      <div class="textbox">
+        <p>Ein <strong>wichtiger</strong> Text</p>
+        <p>Ein <em>hervorgehobener</em> Text</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  black;">
+    <div style="max-width:900px;">
+      <pre>
+&lt;p&gt;Das ist ein Text und <span style="color: tomato;">&lt;br&gt;</span>
+er bricht um&lt;/p&gt;
+        </pre>
+      <div class="textbox">
+        <p>Das ist ein Text<br>und er bricht um</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  purple;">
+    <div class="textbox">
+      <pre>
+&lt;ul&gt;
+  &lt;li&gt;Eine&lt;/li&gt;
+  &lt;li&gt;Auflistung&lt;/li&gt;
+  &lt;li&gt;von&lt;/li&gt;
+  &lt;li&gt;Dingen&lt;/li&gt;
+&lt;/ul&gt;
+      </pre>
+      <ul>
+        <li>Eine</li>
+        <li>Auflistung</li>
+        <li>von</li>
+        <li>Dingen</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  purple;">
+    <div class="textbox">
+      <pre>
+&lt;ol&gt;
+  &lt;li&gt;Eine&lt;/li&gt;
+  &lt;li&gt;Aufzählung&lt;/li&gt;
+  &lt;li&gt;von&lt;/li&gt;
+  &lt;li&gt;Dingen&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+      <ol>
+        <li>Eine</li>
+        <li>Aufzählung</li>
+        <li>von</li>
+        <li>Dingen</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  purple;">
+    <div>
+      <pre>
+&lt;img src="img/dance.webp" width="200" &gt;
+      </pre>
+      <img src="img/dance.webp" width="200" >
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: mintcream; color:  purple;">
+    <div>
+      <pre>
+&lt;iframe 
+  src="https://www.youtube.com/embed/a1Y73sPHKxw" 
+  width="560" height="315"
+  ...
+&gt;&lt;/iframe&gt;
+      </pre>
+      <div style="display: flex;justify-content:center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a1Y73sPHKxw" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: royalblue; color: papayawhip;">
+    <div>
+      <pre>
+&lt;h1 style="background-color: yellow; color: black;"&gt;
+  Ich bin kreativ 👩‍🎨
+&lt;/h1&gt;
+      </pre>
+      <div style="text-align: center">
+        <h1 style="background-color: yellow; color: black; display: inline-block; padding: 0 0.5em" > Ich bin kreativ 👩‍🎨 </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: teal; color: papayawhip;">
+    <div class="textbox">
+      <h1>CSS ✨💅</h1>
+      <p>Cascading Style Sheet</p>
+    </div>
+  </div>
+
+  <div class="slide unstyled">
+    <img src="img/yawn.gif" width="200" />
+    <h1>Langweilig!</h1>
+    <p>Ich bin ein ziemlich einfacher Text</p>
+  </div>
+
+  <div class="slide" style="background-color: slateblue; color: yellow">
+    <img src="img/party.gif" width="200" style="margin-right: 60px;" class="pump" />
+    <div>
+      <h1 style="transform: rotate(15deg)">Party! 🎉</h1>
+      <p>
+        😲
+        <span style="font-size: 1em">W</span>
+        <span style="font-size: 2em">o</span>
+        <span style="font-size: 2.5em">w</span>
+        <span style="font-size: 3em">!</span>
+        </p>
+      <p style="font-size: 2em; display: inline-block; margin-left: 150px" class="rotate">OMG! 😱</p>
+    </div>
+  </div>  
+
+  <div class="slide" style="background-color: royalblue; color: papayawhip;">
+    <div class="textbox">
+      <pre>
+&lt;div&gt;Ein bisschen text&lt;/div&gt;
+&lt;span&gt;Ein bisschen text&lt;/span&gt;
+      </pre>
+      <p>
+        HTML Elemente ohne Bedeutung. <br>
+        Das ist perfekt um sie mit CSS zu gestalten.
+      </p>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: royalblue; color: papayawhip;">
+    <div>
+      <pre>
+width: 150px;
+height: 150px;
+padding: 30px;
+background-color: purple;
+color: yellow;
+border: 3px solid yellow;
+      </pre>
+      <div style="
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+        background-color: purple;
+        color: yellow;
+        margin: 0 auto;
+        border: 3px solid yellow;
+      ">
+        Ich bin ein Text in einer Box  
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: papayawhip; color: tomato;">
+    <div>
+      <div style="text-align: right">
+        <p style="
+          position: relative;
+          color: black; 
+          transform: rotate(-10deg);
+          display: inline-block;
+          margin: 0;
+          margin-bottom: 30px;
+          margin-right: 320px;
+        ">
+          <span class="wiggle-arrow" style="
+            position: absolute;
+            bottom: -100px;
+            right: 10px;
+            font-size: 2.5em;
+            transform: rotate(60deg);
+          ">⤵</span>
+          <span class="wiggle-text">Was ist daran blöd?</span>
+          
+        </p>
+      </div>
+      <pre>
+&lt;div style="
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  background-color: purple;
+  color: yellow;
+"&gt;
+  Ich bin ein Text in einer Box
+&lt;/div&gt;
+        </pre>
+        <div style="text-align: right">
+          <p style="
+                              position: relative;
+                              color: black; 
+                              transform: rotate(-10deg);
+                              display: inline-block;
+                              margin: 0;
+                              margin-bottom: 30px;
+                            ">
+            Was macht ihr, wenn ihr zwei lila Boxen haben wollt?
+          </p>
+        </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: papayawhip; color: tomato;">
+    <div>
+      <pre>
+&lt;style&gt;
+  .lila-box {
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    background-color: purple;
+    color: yellow;
+  }
+&lt;/style&gt;
+
+&lt;div class="lila-box" &gt;
+  Ich bin ein Text in einer Box
+&lt;/div&gt;
+      </pre>
+
+      <style>
+        .lila-box {
+          width: 150px;
+          height: 150px;
+          padding: 30px;
+          margin: 20px;
+          background-color: purple;
+          color: yellow;
+          display: inline-block;
+        }
+      </style>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: papayawhip; color: tomato;">
+    <div>
+      <h1>Jetzt müsst den Style nur einmal ändern! 💁</h1>
+
+      <style>
+        .lila-box {
+          width: 150px;
+          height: 150px;
+          padding: 30px;
+          margin: 20px;
+          background-color: purple;
+          color: yellow;
+          display: inline-block;
+        }
+      </style>
+      <div class="lila-box">
+        Ich bin ein Text in einer Box
+      </div>
+      <div class="lila-box">
+        Ich bin ein Text in einer Box
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: papayawhip; color: tomato;">
+    <div class="textbox" style="max-width: 800px">
+      <h1>Das ganze Web funktioniert mit HTML und CSS</h1>
+      <p>Zum Beispiel:</p>
+      <ul>
+        <li>Instagram</li>
+        <li>Teile von Spotify</li>
+        <li>Facebook</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slide" style="background-color: papayawhip; color: tomato;">
+    <div class="textbox" style="max-width: 800px">
+      <h1>Und jetzt seid ihr dran 👩‍💻</h1>
+      <p>Macht eure eigenen Webseiten und erzählt Geschichten!</p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

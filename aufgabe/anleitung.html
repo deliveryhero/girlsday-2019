@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|Libre+Baskerville:400,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="emoji.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Emoji Quiz</title>
+</head>
+
+<body class="anleitung">
+  <div class="inhalt">
+    <h1>HTML &amp; CSS Anleitung</h1>
+
+    <h2>HTML</h2>
+
+    <h3>&lt;p&gt; – Pagagraph</h3>
+    <p>Mit &lt;p&gt; beschreibst du einen Textabsatz.</p>
+    <p>
+      Beispiel:<br>
+      &lt;p&gt;Hallo, ich bin ein Text&lt;/p&gt;
+    </p>
+
+    <h3>&lt;h1&gt; – Überschrift 1</h3>
+    <p>Mit &lt;h1&gt; beschreibst du die Hauptüberschrift.</p>
+    <p>
+      Beispiel:<br>
+      &lt;h1&gt;Überschrift&lt;/h1&gt;
+    </p>
+
+    <h3>&lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; – Weitere Überschrift</h3>
+    <p>Mit &lt;h2&gt; bis &lt;h6&gt; beschreibst du weitere Überschriften. Damit gibtst du deiner Seite struktur.</p>
+    <p>
+      Beispiel:<br>
+      &lt;h2&gt;Andere Überschrift&lt;/h2&gt;<br>
+      &lt;h3&gt;Noch eine Überschrift&lt;/h3&gt;<br>
+    </p>
+
+    <h3>&lt;br&gt; – Zeilenumbruch</h3>
+    <p>Mit &lt;br&gt; kannst du einen Zeilenumbruch machen. Achte darauf, dass es hier keinen Schließenden "Tag" gibt.</p>
+    <p>
+      Beispiel:<br>
+      &lt;p&gt;Das ist ein Text &lt;br&gt; und hier bricht er um &lt;/p&gt;
+    </p>
+
+    <h3>&lt;strong&gt; – Wichtiger Text</h3>
+    <p>Mit &lt;strong&gt; beschreibst du einen teil von deinem Text, der wichtig ist. Standardmäßig wird er fett dargestellt.</p>
+    <p>
+      Beispiel:<br>
+      &lt;p&gt;Das ist ein &lt;strong&gt;wichtiger&lt;strong&gt; Text &lt;/p&gt;
+    </p>
+
+    <h3>&lt;em&gt; – Hervorgehobener Text</h3>
+    <p>Mit &lt;em&gt; beschreibst du einen teil von deinem Text, der hervorgeheben wurde. Standardmäßig wird er kursiv dargestellt.</p>
+    <p>
+      Beispiel:<br>
+      &lt;p&gt;Das ist ein &lt;em&gt;hervorgehobener&lt;em&gt; Text &lt;/p&gt;
+    </p>
+
+    <h3>&lt;ul&gt; & &lt;li&gt; – Auflistung</h3>
+    <p>Mit &lt;ul&gt; und &lt;li&gt; beschreibst du eine Liste. Das &lt;li&gt; Element beschreibt die einzelnen Listenelemente und &lt;ul&gt; die Liste selber</p>
+    <p>
+      Beispiel:<br>
+      &lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Das ist&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;eine&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Auflistung&lt;/li&gt;<br>
+      &lt;/ul&gt
+    </p>
+
+    <h3>&lt;div&gt; &amp; &lt;span&gt; – Neutrale Elemente</h3>
+    <p>&lt;div&gt; und &lt;span&gt; sind beides neutrale Elemente. Das heißt, sie haben keine Bedeutung. Das ist perfekt um
+      sie mit CSS zu benutzen. Der einzige Unterschied ist, dass das &lt;div&gt; Element ein Block ist (z.B. wie Überschrift und Absatz). 
+      Das &lt;span&gt; Element ist hingegen ein "inline" Element, also es kann innerhalb vom Text benutzt werden und bricht auch mit um.
+    </p>
+    <p>
+      Beispiel:<br>
+      &lt;div&gt;Text&lt;/div&gt;<br>
+      &lt;span&gt;Text&lt;/span&gt;<br>
+      &lt;div&gt;Text mit &lt;span&gt;noch mehr Text&lt;/span&gt;&lt;/div&gt;<br>
+    </p>
+
+    <h2>CSS</h2>
+    <h3>Klasse</h3>
+    <p>Eine Klasse beschreibt eine Ansammlung von "Styles". Sie beginnt in CSS mit einem Punkt. Dahinter muss man das Zeichen
+    "{" benutzen. Damit sagt man, dass die Styles für die Klasse beginnen. Hinter allen Styles muss man dann "}" schreiben.
+   </p>
+    <p>
+      Beispiel:
+      <pre>
+.meine-klasse {
+  color: yellow;
+  background-color: blue;
+}
+      </pre>        
+    </p>
+
+    <h3>Styles</h3>
+    <p>Styles beschreibt ihr mit so</p>
+    <pre>name: wert;</pre>
+
+    Vor dem Doppelpunkt kommt der Name der Eigenschaft (unten ist eine Auflistung von möglichen Eigenschaften). 
+    Dahinter der Wert für diese Eigenschaft.
+    Bei Farbe ist Wert die Farbe, bei Abständen ist es der Abstand mit Einheit (zum Beispiel Pixel [px]).<br>
+    Achte immer auf das Semikolon (;) hinter jedem Style.
+
+    <h4>Farbe</h4>
+    <p>Hintergrundfarbe</p>
+<pre>
+background-color: blue;
+background-color: #ff0000; &lt;-- rot
+</pre>
+
+<p>Vordergrundfarbe</p>
+<pre>
+color: blue;
+color: #00ff00; &lt;-- grün
+</pre>
+
+<h4>Schrift</h4>
+<p>Schriftgröße</p>
+<pre>
+font-size: 16px &lt;-- Schriftgröße von 16 Pixeln
+font-size: 1em &lt;-- Gleiche Schriftgröße wie das Element drumherum (relativ)
+font-size: 2em &lt;-- Doppelte Schriftgröße wie das Element drumherum (relativ)
+</pre>
+
+<p>Schriftgröße</p>
+<pre>
+font-family: "Arial" &lt;-- Schriftart Arial
+</pre>
+
+<h4>Abstände</h4>
+<p>Abstände aussen</p>
+<pre>
+margin: 30px; &lt;-- auf allen Seiten
+margin: 30px 15px; &lt;-- oben und unten 30px und links und rechts 15px
+margin-top: 30px; &lt;-- Abstand oben
+margin-right: 30px; &lt;-- Abstand rechts
+margin-bottom: 30px; &lt;-- Abstand unten
+margin-left: 30px; &lt;-- Abstand links
+</pre>
+
+<p>Abstände innen</p>
+<pre>
+padding: 30px; &lt;-- auf allen Seiten
+padding: 30px 15px; &lt;-- oben und unten 30px und links und rechts 15px
+padding-top: 30px; &lt;-- Abstand oben
+padding-right: 30px; &lt;-- Abstand rechts
+padding-bottom: 30px; &lt;-- Abstand unten
+padding-left: 30px; &lt;-- Abstand links
+</pre>
+
+<h4>Größen</h4>
+<pre>
+width: 300px; &lt;-- Breite von 300 Pixeln
+height: 200px; &lt;-- Höhe von 200 Pixeln
+</pre>
+
+<h4>Rahmen</h4>
+<pre>
+border: 2px solid blue; &lt;-- 2 Pixel Rahmen mit Farbe Blau
+</pre>
+
+  </div>
+</body>
+
+</html>
+
