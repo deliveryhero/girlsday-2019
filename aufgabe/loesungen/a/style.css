@@ -1,0 +1,82 @@
+html, body {
+  background-color: Lavender;
+  color: tomato;
+  padding: 24px;
+  font-family: Monospace, sans-serif;
+}
+
+.anleitung {
+  color: MidnightBlue;
+}
+
+.willkommen-text {
+  margin-bottom: 3em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2.5em;
+  color: MidnightBlue;
+  padding-bottom: 8px;
+  border-bottom: 2px solid MidnightBlue;
+}
+
+h2 {
+  font-family: 'Lemon';
+  font-size: 2em;  
+  color: MidnightBlue;
+}
+
+h3 {
+  font-family: 'Crimson';
+  font-size: 1.5em;  
+}
+
+.inhalt {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.frage {
+  margin-bottom: 80px;
+  font-size: 1.1em;
+}
+
+.emoji-frage {
+  font-size: 2.5em; 
+  background-color: floralwhite;
+  color: black;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 16px;
+}
+
+.hinweis {
+  background-color: pink;
+  color: white;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.loesung {
+  background-color: DeepSkyBlue;
+  color: white;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.versteckt p {
+  opacity: 0;
+}
+
+.versteckt:hover p {
+  opacity: 1;  
+  transition: opacity 0.3s;
+} 
